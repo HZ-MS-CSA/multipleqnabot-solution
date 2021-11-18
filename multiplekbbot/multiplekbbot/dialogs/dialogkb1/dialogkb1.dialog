@@ -1,0 +1,64 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "Wvjlwp",
+    "name": "dialogkb1",
+    "comment": ""
+  },
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "VPGcWw",
+        "comment": ""
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "mPEyik"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "prompt": "${TextInput_Prompt_mPEyik()}"
+        },
+        {
+          "$kind": "Microsoft.QnAMakerDialog",
+          "$designer": {
+            "id": "hL7nfI"
+          },
+          "endpointKey": "PLACEHOLDER",
+          "hostname": "PLACEHOLDER",
+          "noAnswer": "Sorry, I did not find an answer.",
+          "threshold": 0.3,
+          "activeLearningCardTitle": "Did you mean:",
+          "cardNoMatchText": "None of the above.",
+          "cardNoMatchResponse": "Thanks for the feedback.",
+          "top": 3,
+          "isTest": false,
+          "knowledgeBaseId": "PLACEHOLDER"
+        },
+        {
+          "$kind": "Microsoft.RepeatDialog",
+          "$designer": {
+            "id": "4xF8vi"
+          },
+          "activityProcessed": true,
+          "allowLoop": false
+        }
+      ]
+    }
+  ],
+  "generator": "dialogkb1.lg",
+  "recognizer": "dialogkb1.lu.qna",
+  "id": "dialogkb1",
+  "autoEndDialog": true
+}

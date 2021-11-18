@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# TextInput_Prompt_sLr5Bo()
+[Activity
+    Text = ${TextInput_Prompt_sLr5Bo_text()}
+]
+
+# TextInput_Prompt_sLr5Bo_text()
+-    

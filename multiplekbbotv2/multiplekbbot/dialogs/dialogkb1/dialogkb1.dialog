@@ -1,0 +1,169 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "Wvjlwp",
+    "name": "dialogkb1",
+    "comment": ""
+  },
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "VPGcWw",
+        "comment": ""
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "1420Op"
+          },
+          "property": "user.array",
+          "value": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ]
+        },
+        {
+          "$kind": "Microsoft.Foreach",
+          "$designer": {
+            "id": "WTCJqp"
+          },
+          "index": "dialog.foreach.index",
+          "value": "dialog.foreach.value",
+          "itemsProperty": "user.array",
+          "actions": [
+            {
+              "$kind": "Microsoft.TextInput",
+              "$designer": {
+                "id": "sLRcVx"
+              },
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": true,
+              "allowInterruptions": false,
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "property": "user.input",
+              "prompt": "${TextInput_Prompt_sLRcVx()}"
+            },
+            {
+              "$kind": "Microsoft.SwitchCondition",
+              "$designer": {
+                "id": "DnNqZf"
+              },
+              "condition": "user.input",
+              "cases": [
+                {
+                  "value": "cancel",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.DeleteProperty",
+                      "$designer": {
+                        "id": "NR7sEZ"
+                      },
+                      "property": "user.input"
+                    },
+                    {
+                      "$kind": "Microsoft.BreakLoop",
+                      "$designer": {
+                        "id": "Wque7r"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "default": [
+                {
+                  "$kind": "Microsoft.QnAMakerDialog",
+                  "$designer": {
+                    "id": "rQk9Rc"
+                  },
+                  "knowledgeBaseId": "PLACEHOLDER",
+                  "endpointKey": "PLACEHOLDER",
+                  "hostname": "PLACEHOLDER",
+                  "noAnswer": "Sorry, I did not find an answer.",
+                  "threshold": 0.3,
+                  "activeLearningCardTitle": "Did you mean:",
+                  "cardNoMatchText": "None of the above.",
+                  "cardNoMatchResponse": "Thanks for the feedback.",
+                  "top": 3,
+                  "isTest": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "cMFjme",
+            "comment": ""
+          },
+          "activity": "${SendActivity_cMFjme()}"
+        },
+        {
+          "$kind": "Microsoft.EndDialog",
+          "$designer": {
+            "id": "FXRoUC"
+          }
+        }
+      ]
+    }
+  ],
+  "generator": "dialogkb1.lg",
+  "recognizer": "dialogkb1.lu.qna",
+  "id": "dialogkb1",
+  "autoEndDialog": true
+}

@@ -1,0 +1,16 @@
+[import](common.lg)
+
+# SendActivity_cMFjme()
+[Activity
+    Text = ${SendActivity_cMFjme_text()}
+]
+
+# SendActivity_cMFjme_text()
+- Conversation complete.
+# TextInput_Prompt_sLRcVx()
+[Activity
+    Text = ${TextInput_Prompt_sLRcVx_text()}
+]
+
+# TextInput_Prompt_sLRcVx_text()
+-    

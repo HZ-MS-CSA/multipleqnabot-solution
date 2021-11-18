@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# TextInput_Prompt_mPEyik()
+[Activity
+    Text = ${TextInput_Prompt_mPEyik_text()}
+]
+
+# TextInput_Prompt_mPEyik_text()
+-    

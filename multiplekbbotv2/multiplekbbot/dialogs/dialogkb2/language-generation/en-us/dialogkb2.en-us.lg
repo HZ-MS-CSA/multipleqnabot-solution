@@ -1,0 +1,16 @@
+[import](common.lg)
+
+# SendActivity_yhDY9H()
+[Activity
+    Text = ${SendActivity_yhDY9H_text()}
+]
+
+# SendActivity_yhDY9H_text()
+- Conversation complete.
+# TextInput_Prompt_Rh8x5d()
+[Activity
+    Text = ${TextInput_Prompt_Rh8x5d_text()}
+]
+
+# TextInput_Prompt_Rh8x5d_text()
+-    

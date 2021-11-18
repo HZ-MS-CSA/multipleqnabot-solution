@@ -1,0 +1,66 @@
+[import](common.lg)
+
+# SendActivity_Greeting()
+[Activity
+    Text = ${SendActivity_Greeting_text()}
+]
+
+# SendActivity_Greeting_text()
+- Welcome to your bot.
+
+# SendActivity_DidNotUnderstand()
+[Activity
+    Text = ${SendActivity_DidNotUnderstand_text()}
+]
+
+# SendActivity_DidNotUnderstand_text()
+- Hello!
+# ChoiceInput_Prompt_zK8izT()
+[Activity
+    Text = ${ChoiceInput_Prompt_zK8izT_text()}
+]
+
+# ChoiceInput_Prompt_zK8izT_text()
+- What is your choice selection?
+# SendActivity_jwDf3L()
+[Activity
+    Text = ${SendActivity_jwDf3L_text()}
+]
+
+# SendActivity_jwDf3L_text()
+- You didn't select anything
+# SendActivity_UAck97()
+[Activity
+    Text = ${SendActivity_UAck97_text()}
+]
+
+# SendActivity_UAck97_text()
+- You selected choice_1
+# SendActivity_eqmHdO()
+[Activity
+    Text = ${SendActivity_eqmHdO_text()}
+]
+
+# SendActivity_eqmHdO_text()
+- You selected choice_2
+# ChoiceInput_Prompt_DSkuv4()
+[Activity
+    Text = ${ChoiceInput_Prompt_DSkuv4_text()}
+]
+
+# ChoiceInput_Prompt_DSkuv4_text()
+- What is your choice selection?
+# SendActivity_qVKHUH()
+[Activity
+    Text = ${SendActivity_qVKHUH_text()}
+]
+
+# SendActivity_qVKHUH_text()
+- You selected choice_1
+# SendActivity_ezaUZJ()
+[Activity
+    Text = ${SendActivity_ezaUZJ_text()}
+]
+
+# SendActivity_ezaUZJ_text()
+- You selected choice_2
