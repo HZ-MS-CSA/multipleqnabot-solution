@@ -2,6 +2,11 @@
 
 When using Bot Framework Composer's "Text Prompt" feature, if you don't want the bot to ask a question before the user responds, simply put a few white space in the alternative responses. 
 
+When trying out the demo website, two knowledge bases have the same questions but different answers:
+
+1. Knowledgebase 1: What is your name?: Han. What is your role? Data & AI
+2. Knowledgebase 2: What is your name?: David. What is your role? App & Infra
+
 [Bot Framework Composer can be downloaded here under "Releases"](https://docs.microsoft.com/en-us/composer/introduction?tabs=v2x)
 
 MIT License
